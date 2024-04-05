@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Loading from "./components/Loading";
 import Navbar from "./components/Navbar";
+import Sidebar from "../src/components/Sidebar";
 import HomeScreen from "./screen/HomeScreen";
 import ErrorScreen from "./screen/ErrorScreen";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -19,6 +20,7 @@ function App() {
       ) : (
         <Router>
           <Navbar />
+          <Sidebar />
           <Routes>
             <Route path="/" Component={HomeScreen} />
             <Route path="*" Component={ErrorScreen} />
