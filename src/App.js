@@ -27,7 +27,6 @@ function App() {
             <Route path="/" Component={HomeScreen} />
             <Route path="/about" Component={AboutScreen} />
             <Route path="/contact" Component={ContactScreen} />
-            <Route />
             <Route path="*" Component={ErrorScreen} />
           </Routes>
         </Router>
