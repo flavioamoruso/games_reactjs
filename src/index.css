@@ -153,7 +153,7 @@ p {
 }
 
 .icon-btn {
-  padding: 0.4rem 0.2rem;
+  padding: 0.2rem 0.2rem;
   background-color: transparent;
   box-shadow: unset;
   justify-self: center;
@@ -406,14 +406,15 @@ SIDEBAR STYLE
   right: 0;
   z-index: 2;
   width: 100%;
-  background: var(--nav-colors-2);
+  background: #F8FFF4;
   transform: translateX(-100%);
   transition: var(--transition);
 }
 
 .sidebar-content {
-  height: 50%;
+  height: 20%;
   display: grid;
+  text-align: center;
   display: -moz-grid;
   display: -ms-grid;
   display: -webkit-grid;
@@ -428,7 +429,7 @@ SIDEBAR STYLE
 .sidebar .nav-header .nav-icon {
   margin: 0;
   padding: 0;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 
 .sidebar-links {

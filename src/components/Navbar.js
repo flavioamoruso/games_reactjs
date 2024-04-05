@@ -7,11 +7,11 @@ import { useGlobalContext } from "../context";
 const Navbar = () => {
   const { openSidebar } = useGlobalContext();
   return (
-    <nav className="nav">
+    <nav className="nav rubik-scribble-regular">
       <div className="container nav-container">
         <header className="nav-header">
           <Link to="/" className="nav-brand">
-            <h3>My Porfolio</h3>
+            <h3>Gamestart</h3>
           </Link>
           <div>
             <button className="icon-btn btn nav-toggler" onClick={openSidebar}>
