@@ -1,6 +1,7 @@
 import React from "react";
+import { LinkComponent } from "../utils/links";
+import { TiDelete } from "react-icons/ti";
 import { useGlobalContext } from "../context";
-import { FaArrowLeft } from "react-icons/fa";
 
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useGlobalContext();
@@ -12,18 +13,15 @@ const Sidebar = () => {
         <div className="sidebar-content">
           <header className="nav-header container">
             <div className="nav-brand">
-              <h3 className="nav-brand">GameStart</h3>
+              <h3 className="nav-brand">Gamestart</h3>
             </div>
             <button className="nav-toggler btn icon-btn" onClick={closeSidebar}>
-              {" "}
-              <FaArrowLeft className="nav-icon" />
+              <TiDelete className="nav-icon" />
             </button>
           </header>
           <div className="container">
-            <a href="">Link 1</a>
-            <a href="">Link 2</a>
+            <LinkComponent classLink="sidebar-link" />
           </div>
-          {/* Switch darkmode */}
         </div>
       </aside>
     </>
