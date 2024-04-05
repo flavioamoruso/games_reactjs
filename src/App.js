@@ -5,6 +5,8 @@ import Sidebar from "../src/components/Sidebar";
 import HomeScreen from "./screen/HomeScreen";
 import ErrorScreen from "./screen/ErrorScreen";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ContactScreen from "./screen/ContactScreen";
+import AboutScreen from "./screen/AboutScreen";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -23,6 +25,9 @@ function App() {
           <Sidebar />
           <Routes>
             <Route path="/" Component={HomeScreen} />
+            <Route path="/about" Component={AboutScreen} />
+            <Route path="/contact" Component={ContactScreen} />
+            <Route />
             <Route path="*" Component={ErrorScreen} />
           </Routes>
         </Router>
