@@ -4,6 +4,10 @@ import { useGlobalContext } from "../context";
 
 const link = [
   {
+    url: "/",
+    text: "Home",
+  },
+  {
     url: "/about",
     text: "Chi siamo",
   },

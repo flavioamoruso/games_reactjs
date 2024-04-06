@@ -49,6 +49,7 @@ body {
   --background:#F8FFF4 ;
   --title-color:rgb(224, 157, 31);
   --text-color: black;
+  --text-btn:white;
   --bg-btn:rgb(224, 157, 31);
 }
 
@@ -56,7 +57,8 @@ body {
   --background: orange;
   --title-color:black;
   --text-color: white;
-  --bg-btn:black;
+  --text-btn:black;
+  --bg-btn:#ffffff;
 }
 
 
@@ -130,7 +132,6 @@ p {
 
 .btn {
   /* display: inline-block; */
-  color:blue;
   border: none;
   padding: 0.4rem 1.25rem;
   border-radius: var(--btn-radius);
@@ -371,7 +372,7 @@ END NAV STYLE
   
   .btn-primary {
     background-color: var(--bg-btn);
-    color:white;
+    color:var(--text-btn);
     font-size: 0.8rem;
     text-transform: uppercase;
     padding: 10px;
