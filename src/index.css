@@ -34,7 +34,7 @@
 
 body {
   background-color: var(--background);
-  color: black;
+  color: var(--text-color);
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -47,24 +47,16 @@ body {
 
 .light-mode {
   --background:#F8FFF4 ;
-  --text-color: white;
-  --btn-up: white;
-  --input-back:white;
-  --text-input:white;
-  --pallino:white;
-  --button-input:white;
-  --background-card:white;
+  --title-color:rgb(224, 157, 31);
+  --text-color: black;
+  --bg-btn:rgb(224, 157, 31);
 }
 
 .dark-mode {
-  --background: black;
-  --text-color: black;
-  --btn-up: black;
-  --input-back:black;
-  --text-input:black;
-  --pallino:black;
-  --button-input:black;
-  --background-card:black;
+  --background: orange;
+  --title-color:black;
+  --text-color: white;
+  --bg-btn:black;
 }
 
 
@@ -93,18 +85,22 @@ h4 {
 }
 h1 {
   font-size: 3rem;
+  color: var(--title-color);
 }
 h2 {
   font-size: 2rem;
+  color: var(--title-color);
 }
 h3 {
   font-size: 1.25rem;
+  color: var(--title-color);
 }
 h4 {
   font-size: 0.875rem;
+  color: var(--title-color);
 }
 p {
-  color: var(--primary-gray);
+  color: var(--text-color);
   font-size: 0.9rem;
   letter-spacing: var(--letter-spacing);
 }
@@ -148,7 +144,7 @@ p {
 }
 
 .btn:hover{
-  background-color:green;
+  /* background-color:green; */
   transition: 1s;
 }
 
@@ -374,8 +370,8 @@ END NAV STYLE
   }
   
   .btn-primary {
-    background-color: var(--btn-up);
-    color:black;
+    background-color: var(--bg-btn);
+    color:white;
     font-size: 0.8rem;
     text-transform: uppercase;
     padding: 10px;
@@ -383,8 +379,7 @@ END NAV STYLE
   }
   
   .btn-primary:hover {
-    background-color: white;
-    transform: scale(1.02);
+    transform: scale(1.1);
   }
   
   .row{
@@ -499,7 +494,7 @@ END SIDEBAR STYLE
     display: -webkit-grid;
     display: grid;
     height: 100vh;
-    margin-left: 10px;
+    padding: 24px;
     align-items: center;
   }
   
@@ -512,7 +507,6 @@ END SIDEBAR STYLE
     place-items: center;
     text-align: center;
     gap: 2rem;
-    color: black;
   }
   
   .home-hero-title {
@@ -533,7 +527,7 @@ END SIDEBAR STYLE
   
   .home-hero-text p {
     align-self: center;
-    color: var(--light-gray);
+    color: var(--text-color);
     max-width: 70ch;
     line-height: 1.6;
   }
@@ -541,6 +535,12 @@ END SIDEBAR STYLE
   .home-hero-text .btn {
     align-self: center;
     border-radius: 22px;
+  }
+
+  .background-image{
+    background:linear-gradient(black,transparent),url(../src/assets/header.jpg);
+    background-position: center;
+    background-size: cover;
   }
   
   /*=== HOME HERO MEDIA ===*/
@@ -558,7 +558,7 @@ END SIDEBAR STYLE
   
     .home-hero-text p {
       align-self: flex-start;
-      color: var(--light-gray);
+      color: var(--text-color);
       max-width: 70ch;
       line-height: 1.6;
     }

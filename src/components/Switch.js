@@ -86,7 +86,7 @@ const StyledSwitch = styled.div`
   }
 
   .input__check:checked + .slider {
-    background-color: green;
+    background-color: #f8fff4;
   }
 
   .input__check:checked + .slider:before {
