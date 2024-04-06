@@ -33,7 +33,7 @@
 }
 
 body {
-  background-color: #F8FFF4;
+  background-color: var(--background);
   color: black;
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -45,8 +45,8 @@ body {
 
 /* Dark mode */
 
-/* .light-mode {
-  --nav-colors:#1B98E0 ;
+.light-mode {
+  --background:#F8FFF4 ;
   --text-color: white;
   --btn-up: white;
   --input-back:white;
@@ -57,7 +57,7 @@ body {
 }
 
 .dark-mode {
-  --nav-colors-2: black;
+  --background: black;
   --text-color: black;
   --btn-up: black;
   --input-back:black;
@@ -65,7 +65,7 @@ body {
   --pallino:black;
   --button-input:black;
   --background-card:black;
-} */
+}
 
 
 

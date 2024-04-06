@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useGlobalContext } from "../context";
 
 const StyledSwitch = styled.div`
   /* The switch - the box around the slider */
@@ -105,11 +106,12 @@ const StyledSwitch = styled.div`
 `;
 
 const Switch = () => {
+  const { cambiaTema } = useGlobalContext();
   return (
     <>
       <StyledSwitch>
         <label class="switch">
-          <input type="checkbox" class="input__check" />
+          <input type="checkbox" class="input__check" onClick={cambiaTema} />
           <span class="slider"></span>
         </label>
       </StyledSwitch>
