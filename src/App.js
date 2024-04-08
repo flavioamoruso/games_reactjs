@@ -30,7 +30,6 @@ function App() {
             <Route path="/contact" Component={ContactScreen} />
             <Route path="*" Component={ErrorScreen} />
           </Routes>
-          <GameScreen />
         </Router>
       )}
     </>

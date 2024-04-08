@@ -12,9 +12,7 @@ export function Giochi(props) {
         <div class="card-title">{props.title}</div>
         <hr class="card-divider" />
         <div class="card-footer">
-          <div class="card-price">
-            {props.price} <span>€</span>
-          </div>
+          <div class="card-price">{props.price}</div>
         </div>
       </div>
     </>
