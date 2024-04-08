@@ -7,6 +7,7 @@ import ErrorScreen from "./screen/ErrorScreen";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ContactScreen from "./screen/ContactScreen";
 import AboutScreen from "./screen/AboutScreen";
+import GameScreen from "./components/Game";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,6 +30,7 @@ function App() {
             <Route path="/contact" Component={ContactScreen} />
             <Route path="*" Component={ErrorScreen} />
           </Routes>
+          <GameScreen />
         </Router>
       )}
     </>

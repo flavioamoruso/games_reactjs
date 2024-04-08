@@ -20,3 +20,5 @@ export function Giochi(props) {
     </>
   );
 }
+
+export default Giochi;

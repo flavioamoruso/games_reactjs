@@ -21,6 +21,7 @@ const HomeScreen = () => {
           </Link>
         </div>
       </div>
+      <GameScreen />
     </>
   );
 };
