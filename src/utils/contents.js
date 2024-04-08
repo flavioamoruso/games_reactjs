@@ -1,4 +1,4 @@
-const gioco = [
+const contents = [
   {
     id: "1",
     title: "Grand Theft Auto",
@@ -49,4 +49,4 @@ const gioco = [
   },
 ];
 
-export default gioco;
+export default contents;

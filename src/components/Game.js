@@ -3,22 +3,20 @@ import React from "react";
 export function Giochi(props) {
   return (
     <>
-      {/* <div class="card">
+      <div class="card">
         <div>
-          <div class="img"></div>
+          <div class="img">
+            <img src={props.img} width={180} height={100} />
+          </div>
         </div>
-        <div class="card-title">Product title</div>
-        <div class="card-subtitle">
-          Product description. Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit.
-        </div>
+        <div class="card-title">{props.title}</div>
         <hr class="card-divider" />
         <div class="card-footer">
           <div class="card-price">
-            123.45 <span>€</span>
+            {props.price} <span>€</span>
           </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 }
