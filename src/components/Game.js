@@ -6,7 +6,7 @@ export function Giochi(props) {
       <div class="card">
         <div>
           <div class="img">
-            <img src={props.img} width={180} height={100} />
+            <img className="border" src={props.img} width={180} height={100} />
           </div>
         </div>
         <div class="card-title">{props.title}</div>

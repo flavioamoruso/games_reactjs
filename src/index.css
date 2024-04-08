@@ -34,7 +34,7 @@
 
 body {
   background-color: var(--background);
-  color: var(--text-color);
+  /* color: var(--text-color); */
   font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -583,6 +583,11 @@ END SIDEBAR STYLE
   align-items: center;
   grid-template-columns: repeat(4, 2fr);
   gap: 60px;
+}
+
+.border{
+  border: 2px solid var(--text-color);
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 768px) {
