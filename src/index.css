@@ -704,7 +704,7 @@ END SIDEBAR STYLE
   --font-color-sub: #666;
   --bg-color: #fff;
   --main-color: #323232;
-  padding: 5px;
+  padding: 15px;
   margin: 34px;
   background: var(--bg-form);
   display: flex;
