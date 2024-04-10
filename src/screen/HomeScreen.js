@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const HomeScreen = () => {
   return (
     <>
-      <div className="home-hero background-image" data-aos="fade-left">
+      <div className="home-hero background-image">
         <div className="home-hero-text">
           <div className="home-hero-title">
             <h2 className="brand-color">Benvenuti su GameStart</h2>
