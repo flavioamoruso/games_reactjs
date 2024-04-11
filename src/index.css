@@ -557,7 +557,7 @@ END SIDEBAR STYLE
   }
 
   .background-image{
-    background:linear-gradient(black,transparent),url(../src/assets/header.jpg);
+    background:linear-gradient(black,transparent),url(../src/assets/image/header.jpg);
     background-position: center;
     background-size: cover;
   }
@@ -801,5 +801,41 @@ END SIDEBAR STYLE
   cursor: pointer;
 }
 
+/* About style */
+
+
+.bg-1{
+  background: url(./assets/image/sfera-ebbasta.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+  border: 2px solid black;
+  border-radius: 80px;
+  margin-bottom: 24px;
+}
+
+
+.bg-2{
+  background: url(./assets/image/geolier.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+  border: 2px solid black;
+  border-radius: 80px;
+  margin-bottom: 24px;
+}
+
+.bg-3{
+  background: url(./assets/image/rosevillain.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+  border: 2px solid var(--text-color);
+  border-radius: 80px;
+  margin-bottom: 24px;
+}
 
 
