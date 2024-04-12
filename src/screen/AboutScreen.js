@@ -38,14 +38,20 @@ const AboutScreen = () => {
           style={{
             display: "flex",
             justifyContent: "space-around",
-            marginTop: "24px",
+            marginTop: "14px",
           }}
         >
-          <div className="bg-1"></div>
+          <div className="bg-1">
+            <p className="posizioni">Sfera Ebbasta</p>
+          </div>
 
-          <div className="bg-2"></div>
+          <div className="bg-2">
+            <p className="posizioni">Geolier</p>
+          </div>
 
-          <div className="bg-3"></div>
+          <div className="bg-3">
+            <p className="posizioni">Rose Villain</p>
+          </div>
         </div>
       </section>
     </>
