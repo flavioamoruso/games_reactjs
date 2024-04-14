@@ -7,8 +7,7 @@ import ErrorScreen from "./screen/ErrorScreen";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ContactScreen from "./screen/ContactScreen";
 import AboutScreen from "./screen/AboutScreen";
-import GameScreen from "./components/Game";
-
+import Footer from "./components/Footer";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -30,6 +29,7 @@ function App() {
             <Route path="/contact" Component={ContactScreen} />
             <Route path="*" Component={ErrorScreen} />
           </Routes>
+          <Footer />
         </Router>
       )}
     </>
