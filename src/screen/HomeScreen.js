@@ -1,8 +1,10 @@
 import React from "react";
 import GameScreen from "../screen/GameScreen";
 import { Link } from "react-router-dom";
+import useTitle from "../useTitle";
 
 const HomeScreen = () => {
+  useTitle("Home");
   return (
     <>
       <div className="home-hero background-image">

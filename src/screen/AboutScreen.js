@@ -1,8 +1,10 @@
 import React from "react";
 import Lottie from "react-lottie";
 import animationData from "../assets/animation/aboutAnimation.json";
+import useTitle from "../useTitle";
 
 const AboutScreen = () => {
+  useTitle("Chi siamo");
   return (
     <>
       <div className="home-hero">

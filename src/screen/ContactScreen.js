@@ -2,8 +2,10 @@ import React from "react";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa6";
 import { SiTiktok } from "react-icons/si";
+import useTitle from "../useTitle";
 
 const ContactScreen = () => {
+  useTitle("Contattaci");
   return (
     <>
       <div
